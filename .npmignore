@@ -16,4 +16,4 @@ lib/
 src/
 test/
 tsconfig.json
-
+renovate.json
