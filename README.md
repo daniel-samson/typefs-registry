@@ -5,7 +5,7 @@ A npm package that holds the shared type definitions across all [TypeFS](https:/
 
 ## Project Status
 
-[![npm (tag)](https://img.shields.io/npm/v/typefs-registry/latest)](https://www.npmjs.com/package/typefs)
+[![npm (tag)](https://img.shields.io/npm/v/typefs-registry/latest)](https://www.npmjs.com/package/typefs-registry)
 [![Node.js CI](https://github.com/daniel-samson/typefs-registry/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/daniel-samson/typefs-registry/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/daniel-samson/typefs-registry/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/daniel-samson/typefs-registry/actions/workflows/codeql-analysis.yml)
 [![codecov](https://codecov.io/gh/daniel-samson/typefs-registry/branch/main/graph/badge.svg?token=RYZSMgtASL)](https://codecov.io/gh/daniel-samson/typefs-registry)
