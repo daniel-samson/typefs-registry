@@ -15,8 +15,8 @@ describe('Util', () => {
     });
 
     it('throws error when outside jail', () => {
-        const actual = () => Util.jail('../bar', '/foo', true);
-        expect(actual).to.throw("no such file or directory '../bar'");
+      const actual = () => Util.jail('../bar', '/foo', true);
+      expect(actual).to.throw("no such file or directory '../bar'");
     });
   });
 });
