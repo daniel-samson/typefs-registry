@@ -20,7 +20,7 @@ export interface Disk {
   /**
    * Determins which driver is to be used
    */
-  driver: DriverType,
+  driver: string | DriverType,
 }
 
 /**
