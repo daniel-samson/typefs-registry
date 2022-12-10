@@ -74,6 +74,14 @@ export interface WebDAVClientOptions {
  */
 export interface HttpDisk extends WebDAVClientOptions {
   /**
+   * Defines where paths are relative to
+   */
+  root: string,
+  /**
+   * Dont allow paths outside root
+   */
+  jail: boolean
+  /**
    * The URL of the http service
    */
   endPoint: URL;
