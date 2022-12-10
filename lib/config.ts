@@ -1,3 +1,4 @@
+/* eslint no-unused-vars: 0 */
 import { URL } from 'url';
 
 /**
@@ -37,10 +38,41 @@ export interface FileDisk {
   jail: boolean
 }
 
+/** Taken from webdav package */
+export enum AuthType {
+    Digest = 'digest',
+    None = 'none',
+    Password = 'password',
+    Token = 'token'
+}
+
+export interface Headers {
+    [key: string]: string;
+}
+export interface OAuthToken {
+    access_token: string;
+    token_type: string;
+    refresh_token?: string;
+}
+
+export interface WebDAVClientOptions {
+    authType?: AuthType;
+    contactHref?: string;
+    headers?: Headers;
+    httpAgent?: any;
+    httpsAgent?: any;
+    maxBodyLength?: number;
+    maxContentLength?: number;
+    password?: string;
+    token?: OAuthToken;
+    username?: string;
+    withCredentials?: boolean;
+}
+
 /**
  * WebDav storage
  */
-export interface HttpDisk {
+export interface HttpDisk extends WebDAVClientOptions {
   /**
    * The URL of the http service
    */
