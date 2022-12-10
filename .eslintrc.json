@@ -31,6 +31,8 @@
         "jsdoc/require-param-type": "warn",
         "import/prefer-default-export": "off",
         "import/extensions": "off",
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
         "import/no-unresolved": "error"
     },
     "settings": {
