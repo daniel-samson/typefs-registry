@@ -10,7 +10,6 @@ export interface ListDirectoryOptions {
 export abstract class DiskDriver {
   /**
    * Opens file and read full contents of file.
-   *
    * @param {string} path relative to root of disk
    * @returns {Promise<Buffer>} contents of file
    * @throws Error when path is outside root directory and
@@ -21,7 +20,6 @@ export abstract class DiskDriver {
 
   /**
    * Opens file and chunks the contents of file.
-   *
    * @param {string} path relative to root of disk
    * @returns {Promise<Readable>} contents of file
    * @throws Error when path is outside root directory and
@@ -32,7 +30,6 @@ export abstract class DiskDriver {
 
   /**
    * Opens file and writes full contents to file.
-   *
    * @param {string} path relative to root of disk
    * @param {Buffer} data contents of file
    * @returns {Promise<void>}
@@ -44,7 +41,6 @@ export abstract class DiskDriver {
 
   /**
    * Opens file and writes full contents to file.
-   *
    * @param {string} path relative to root of disk
    * @param {Readable} data contents of file
    * @returns {Promise<void>}
@@ -56,7 +52,6 @@ export abstract class DiskDriver {
 
   /**
    * Deletes file.
-   *
    * @param {string} path relative to root of disk
    * @returns {Promise<void>}
    * @throws Error when path is outside root directory and
@@ -67,7 +62,6 @@ export abstract class DiskDriver {
 
   /**
    * Deletes directory.
-   *
    * @param {string} path relative to root of disk
    * @returns {Promise<void>}
    * @throws Error when path is outside root directory and
@@ -78,7 +72,6 @@ export abstract class DiskDriver {
 
   /**
    * Creates directory.
-   *
    * @param {string} path relative to root of disk
    * @returns {Promise<void>}
    * @throws Error when path is outside root directory and
@@ -89,7 +82,6 @@ export abstract class DiskDriver {
 
   /**
    * List contents of directory
-   *
    * @param {string} path relative to root of disk
    * @param {ListDirectoryOptions} options eg. set recursive to true
    * @returns {Promise<void>}
@@ -101,7 +93,6 @@ export abstract class DiskDriver {
 
   /**
    * checks if file or directory exists.
-   *
    * @param {string} path relative to root of disk
    * @returns {Promise<boolean>} true when path exists
    * @throws Error when path is outside root directory and
@@ -112,7 +103,6 @@ export abstract class DiskDriver {
 
   /**
    * When was file last modified.
-   *
    * @param {string} path relative to root of disk
    * @returns {Promise<Date>} when file was last modified
    * @throws Error when path is outside root directory and
@@ -123,7 +113,6 @@ export abstract class DiskDriver {
 
   /**
    * Size of file
-   *
    * @param {string} path relative to root of disk
    * @returns {Promise<number>} The file size in bytes
    * @throws Error when path is outside root directory and
@@ -134,7 +123,6 @@ export abstract class DiskDriver {
 
   /**
    * Moves source file to destination
-   *
    * @param {string} source path relative to root of disk
    * @param {string} destination path relative to root of disk
    * @returns {Promise<void>}
@@ -146,7 +134,6 @@ export abstract class DiskDriver {
 
   /**
    * Copies source file to destination
-   *
    * @param {string} source path relative to root of disk
    * @param {string} destination path relative to root of disk
    * @returns {Promise<void>}
