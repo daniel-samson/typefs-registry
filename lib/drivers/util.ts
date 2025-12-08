@@ -8,7 +8,6 @@ import {
 export class Util {
   /**
    * Controls access to paths which are above/outside the root directory
-   *
    * @param {string} path relative path to disks root directory
    * @param {string} root absolute path
    * @param {boolean} jail true if restricted to root
@@ -33,7 +32,6 @@ export class Util {
 
   /**
    * Resolves path relative to roots absolute path
-   *
    * @param {string} path relative to root path
    * @param {string} root absolute path
    * @returns {string} absolute path
